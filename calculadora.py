@@ -8,7 +8,7 @@ def calculate():
     ''')
 
     number_1 = int(input('Enter yout first number: '))
-    number_2 = int(input('Enter yout first number: '))
+    number_2 = int(input('Enter yout second number: '))
 
     # Sum
     def invokeSum(number_1, number_2):
@@ -32,19 +32,15 @@ def calculate():
 
     if operation == '+':
         invokeSum(number_1, number_2)
-        again()
     elif operation == '-':
         invokeSub(number_1, number_2)
-        again()
     elif operation == '*':
         invokeMult(number_1, number_2)
-        again()
     elif operation == '/':
         invokeDiv(number_1, number_2)
-        again()
     else:
         print('You have not typed a valid operator, please run the program again.')
-        again()
+    again()
 
 def again():
     calc_again = input('''
